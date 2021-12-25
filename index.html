@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Entry Hub</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center bg-dark">
+    <div class="container">
+        <div class="row symptoms-container py-5">
+            <div>
+                <textarea name="symptomsTextBox" id="symptomsTextBox" class="form-control mb-3 symptoms-textarea" rows="4">No fever or chills. No nausea or vomiting. He had a mild fever and fainted. He does not recall falling. There is no apparent fracture.</textarea>
+            </div>
+            <div>
+                <button class="btn btn-bg text-white p-relative" id="extract">Extract</button>
+                <button class="btn btn-bg text-white ms-4 d-none" id="jsonExtract">JSON</button>
+            </div>
+            <div class="container mt-3 d-none" id="symptomsTable">
+                <table class="table">
+                    <thead class="font-small">
+                        <tr>
+                            <th>
+                                Label
+                            </th>
+                            <th>
+                                Id
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Reference text
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fever</td>
+                            <td>lxg-45c0d6e146f4</td>
+                            <td>Disease</td>
+                            <td>... No <span class="highlighted-text">[ fever ]</span> or chills ...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script defer src="./scripts/bootstrap.bundle.js"></script>
+    <script defer src="./scripts/script.js"></script>
+</body>
+
+</html>
