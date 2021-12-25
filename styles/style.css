@@ -56,6 +56,6 @@ tbody>tr {
     border-bottom-style: hidden;
 }
 
-thead>tr {
-    border-color: #d0d0d0;
+th {
+    border-bottom: 1px solid #d0d0d0 !important;
 }
